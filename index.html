@@ -6,26 +6,38 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
     $(function(){
-          $('p').click(function(){
-      $('p').slideUp("slow");
-        
+          $('fieldset').click(function(){
+      $("body").css("background-color");
+      $("legend").css("background-color");
+      $("fieldset").slideUp("slow");
+      
     });
     });
     
     </script>
   </head>
-  <body>
-    <p> Please make sure that you fill out everything(to exit this out just click on it) </p>
-     <legend>Personal information:</legend>
+  <body style ="background-color:#fffacd">
+   
+    <fieldset> 
+    <legend style="background-color:#23c8b2">
+      
+    </style>Personal information:</legend>
     First name:<br>
     <input type="text" name="firstname" value="">
     <br>
     Last name:<br>
     <input type="text" name="lastname" value="">
     <br><br>
-    <input type="submit" value="Submit">
- 
-  Theme: <input type="radio"name  =""/>
+    <form>
+    Theme: <br>
+    <input type="radio" name="theme" value="Summer" checked> Summer <br>
+    <input type="radio" name="theme" value="Yoga" checked> Yoga <br>
+    <input type="radio" name="theme" value="Beach" checked> Beach <br>
+    <input type="radio" name="theme" value="Flowers" checked> Flowers<br>
+    <input type="submit" value="Submit" >
+    </form>
+ </fieldset>
+  <p></p>
   
   </body>
 </html>
