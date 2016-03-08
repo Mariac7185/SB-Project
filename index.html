@@ -6,7 +6,7 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
     $(function(){
-          $('fieldset').click(function(){
+          $('#Banner').click(function(){
       $("body").css("background-color");
       $("legend").css("background-color");
       $("fieldset").slideUp("slow");
@@ -23,18 +23,22 @@
     <legend style="background-color:#23c8b2">
       
     </style>Personal information:</legend>
-    <br>
+   
     Caption:<br>
     <input type="text" name="firstname" value="">
     <br>
+    
     <form>
     Theme:
     <br>
     <input type="radio" name="theme" value="Summer" checked> Summer <br>
-    <input type="radio" name="theme" value="Yoga" checked> Yoga <br>
+    <input type="radio" name="theme" value="Sports" checked> Sports <br>
     <input type="radio" name="theme" value="Beach" checked> Beach <br>
     <input type="radio" name="theme" value="Flowers" checked> Flowers<br>
-    <input type="submit" value="Make Banner" >
+    <form>
+      
+    </form>
+    <input id="Banner" type="submit" value="Make Banner" >
     </form>
  </fieldset>
   <p></p>
