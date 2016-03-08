@@ -11,11 +11,33 @@
       $("legend").css("background-color");
       $("fieldset").slideUp("slow");
      
-      
     });
     });
     
+    $(function() {
+      $('#toPurple').click(function(){
+        $('div').css('background-color',"Purple");
+      });
+        $('#toBlue').click(function(){
+        $('div').css('background-color',"Blue");
+      });
+    });
+    
+    
     </script>
+    <style >
+       div {
+      text-align:center;
+      font-size:50px;
+      background-color: ;
+      color: Black;
+      width:400px;
+      padding: 90px;
+      margin: 20px 0;
+    }
+    
+    
+    </style>
   </head>
   <body style ="background-color:#fffacd">
    
@@ -31,10 +53,10 @@
     <form>
     Theme:
     <br>
-    <input type="radio" name="theme" value="Summer" checked> Summer <br>
-    <input type="radio" name="theme" value="Sports" checked> Sports <br>
-    <input type="radio" name="theme" value="Beach" checked> Beach <br>
-    <input type="radio" name="theme" value="Flowers" checked> Flowers<br>
+    <input type="radio" name="theme" value="Pink" checked> Pink <br>
+    <input type="radio" name="theme" value="Blue" checked> Blue<br>
+    <input type="radio" name="theme" value="Purple" checked> Purple <br>
+    <input type="radio" name="theme" value="Red" checked>Red<br>
     <form>
       
     </form>
@@ -42,8 +64,10 @@
     </form>
  </fieldset>
   <p></p>
-  <div> 
+  <div>Caption</div>
+  <button id="toPurple">Purple</button>
+  <button id="toBlue">Blue</button>
+
   
-  </div>
   </body>
 </html>
