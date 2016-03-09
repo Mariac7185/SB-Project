@@ -30,8 +30,30 @@
       $('#toPink').click(function(){
         $('div').css('background-color',"Pink");
       });
+      $('#toYellow').click(function(){
+        $('div').css('background-color',"Yellow");
+      });
+      $('#toTeal').click(function(){
+        $('div').css('background-color',"Teal");
+      });
+      $('#toBrown').click(function(){
+        $('div').css('background-color',"Brown");
+      });
     });
-    
+    $(function() {
+      $('span').hover(
+        function(){
+          $(this).css("font-size","58px");
+          
+        } ,
+        function(){
+          $(this).css("font-size","22px");}
+        
+        );
+        
+      
+      
+    });
     
     </script>
     <style >
@@ -39,19 +61,41 @@
       text-align:center;
       font-size:50px;
       /*background-color: ;*/
-      color: Black;
+      color: 'div';
       width:400px;
       padding: 90px;
       margin: 20px 0;
     }
     
+    fieldset { 
+      font-size:24px;
+    color:#52143d;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 1.55em;
+    padding-bottom: 1.825em;
+    padding-left: 1.95em;
+    padding-right: 1.95em;
+    border: 4px groove ;
+}
+h2{
+  font-size:28px;
+  color:#f0c1e1;
+}
     
     </style>
   </head>
   <body style ="background-color:#873352">
-   
+   <br>
+   <br>
+   <br>
+   <br>
+   <span style="color:pink">Ready </span><span style="color:pink">To  </span><span style="color:pink">Create </span><span style="color:pink">Your </span><span style="color:pink">Banner! </span>
+   <br>
+   <br>
     <fieldset> 
-    <legend style="background-color:#805BAD">
+    <legend style="background-color:#f0c1e1">
       
     Personal information:</legend>
   
@@ -74,10 +118,14 @@
  </fieldset>
   
   <div></div>
+  <h2> <u>Please choose your background color!</u></h2>
   <button id="toPurple">Purple</button>
   <button id="toBlue">Blue</button>
   <button id="toRed">Red</button>
   <button id="toPink">Pink</button>
+  <button id="toYellow">Yellow</button>
+  <button id="toTeal">Teal</button>
+  <button id="toBrown">Brown</button>
   <br><br><br><br><br><br><br><br><br>
 <p></p>
   
