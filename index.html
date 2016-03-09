@@ -10,6 +10,9 @@
       $("body").css("background-color");
       $("legend").css("background-color");
       $("fieldset").slideUp("slow");
+    var firstName =$("#secondName").val();  
+      var last=  firstName;
+     $('div').html(last);
      
     });
     });
@@ -35,7 +38,7 @@
        div {
       text-align:center;
       font-size:50px;
-      background-color: ;
+      /*background-color: ;*/
       color: Black;
       width:400px;
       padding: 90px;
@@ -50,10 +53,10 @@
     <fieldset> 
     <legend style="background-color:#805BAD">
       
-    </style>Personal information:</legend>
-   
+    Personal information:</legend>
+  
     Caption:<br>
-    <input type="text" name="firstname" value="">
+    <input   type="text" id="secondName" value="">
     <br>
     
     <form>
@@ -69,14 +72,14 @@
     <input id="Banner" type="submit" value="Make Banner" >
     </form>
  </fieldset>
-  <p></p>
-  <div>Caption</div>
+  
+  <div></div>
   <button id="toPurple">Purple</button>
   <button id="toBlue">Blue</button>
   <button id="toRed">Red</button>
   <button id="toPink">Pink</button>
-  
-
+  <br><br><br><br><br><br><br><br><br>
+<p></p>
   
   </body>
 </html>
