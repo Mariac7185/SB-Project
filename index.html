@@ -1,132 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>jQuery Template</title>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-    $(function(){
-          $('#Banner').click(function(){
-      $("body").css("background-color");
-      $("legend").css("background-color");
-      $("fieldset").slideUp("slow");
-    var firstName =$("#secondName").val();  
-    var last=  firstName;
-     $('div').html(last);
-     
-    });
-    });
-    
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Template</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
     $(function() {
-      $('#toPurple').click(function(){
-        $('div').css('background-color',"Purple");
+      $('#Banner').click(function() {
+
+        $("body").css("background-color");
+        $("legend").css("background-color");
+        $("fieldset").slideUp("slow");
+        var firstName = $("#secondName").val();
+        var last = firstName;
+        $('div').html(last);
+        var userTheme = $("input[name=theme]:checked").val();
+        $('div').css("color", userTheme);
+
+
       });
-        $('#toBlue').click(function(){
-        $('div').css('background-color',"Blue");
+    });
+
+    $(function() {
+      $('#toPurple').click(function() {
+        $('div').css('background-color', "Purple");
       });
-      $('#toRed').click(function(){
-        $('div').css('background-color',"Red");
+      $('#toBlue').click(function() {
+        $('div').css('background-color', "Blue");
       });
-      $('#toPink').click(function(){
-        $('div').css('background-color',"Pink");
+      $('#toRed').click(function() {
+        $('div').css('background-color', "Red");
       });
-      $('#toYellow').click(function(){
-        $('div').css('background-color',"Yellow");
+      $('#toPink').click(function() {
+        $('div').css('background-color', "Pink");
       });
-      $('#toTeal').click(function(){
-        $('div').css('background-color',"Teal");
+      $('#toYellow').click(function() {
+        $('div').css('background-color', "Yellow");
       });
-      $('#toBrown').click(function(){
-        $('div').css('background-color',"Brown");
+      $('#toTeal').click(function() {
+        $('div').css('background-color', "Teal");
+      });
+      $('#toBrown').click(function() {
+        $('div').css('background-color', "Brown");
+      });
+      $('#toGreen').click(function() {
+        $('div').css('background-color', "Green");
+      });
+      $('#toCyan').click(function() {
+        $('div').css('background-color', "Cyan");
+      });
+      $('#toAquamarine').click(function() {
+        $('div').css('background-color', "Aquamarine");
       });
     });
     $(function() {
       $('span').hover(
-        function(){
-          $(this).css("font-size","58px");
-          
-        } ,
-        function(){
-          $(this).css("font-size","22px");}
-        
-        );
-        
-      
-      
+        function() {
+          $(this).css("font-size", "58px");
+
+        },
+        function() {
+          $(this).css("font-size", "22px");
+        }
+
+      );
+
+
+
     });
-    
-    </script>
-    <style >
-       div {
-      text-align:center;
-      font-size:50px;
+  </script>
+  <style>
+    div {
+      text-align: center;
+      font-size: 50px;
       /*background-color: ;*/
       color: 'div';
-      width:400px;
+      width: 400px;
       padding: 90px;
       margin: 20px 0;
     }
     
-    fieldset { 
-      font-size:24px;
-    color:#52143d;
-    display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 1.55em;
-    padding-bottom: 1.825em;
-    padding-left: 1.95em;
-    padding-right: 1.95em;
-    border: 4px groove ;
-}
-h2{
-  font-size:28px;
-  color:#f0c1e1;
-}
+    fieldset {
+      font-size: 24px;
+      color: #52143d;
+      display: block;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-top: 1.55em;
+      padding-bottom: 1.825em;
+      padding-left: 1.95em;
+      padding-right: 1.95em;
+      border: 4px groove;
+    }
     
-    </style>
-  </head>
-  <body style ="background-color:#873352">
-   <br>
-   <br>
-   <br>
-   <br>
-   <span style="color:pink">Ready </span><span style="color:pink">To  </span><span style="color:pink">Create </span><span style="color:pink">Your </span><span style="color:pink">Banner! </span>
-   <br>
-   <br>
-    <fieldset> 
+    h2 {
+      font-size: 28px;
+      color: #f0c1e1;
+    }
+    
+    h3 {
+      color: #F9A7B0;
+      text-align: Center;
+      font-size: 50PX;
+    }
+  </style>
+</head>
+
+<body style="background-color:#873352">
+  <br>
+  <br>
+  <br>
+  <br>
+  <span style="color:pink">Ready </span><span style="color:pink">To  </span><span style="color:pink">Create </span><span style="color:pink">Your </span><span style="color:pink">Banner! </span>
+  <br>
+  <br>
+  <fieldset>
     <legend style="background-color:#f0c1e1">
-      
-    1.Choose your Caption:</legend>
-  
-    Caption:<br>
-    <input   type="text" id="secondName" value="">
+
+      1.Choose your Caption:</legend>
+
+    Caption:
     <br>
-    
-    <form>
-    Color:
+    <input type="text" id="secondName" value="">
     <br>
-    <input type="radio" name="theme" value="Pink" checked> Pink <br>
-    <input type="radio" name="theme" value="Blue" checked> Blue<br>
-    <input type="radio" name="theme" value="Purple" checked> Purple <br>
-    <input type="radio" name="theme" value="Red" checked>Red<br>
+
     <form>
-      
+      Color:
+      <br>
+
+      <br>
+      <input type="radio" name="theme" value="Pink" checked> Pink
+      <br>
+      <input type="radio" name="theme" value="Blue" checked> Blue
+      <br>
+      <input type="radio" name="theme" value="Purple" checked> Purple
+      <br>
+      <input type="radio" name="theme" value="Red" checked>Red
+      <br>
+      <form>
+
+      </form>
+      <input id="Banner" type="submit" value="Make Banner">
     </form>
-    <input id="Banner" type="submit" value="Make Banner" >
-    </form>
- </fieldset>
-  
+  </fieldset>
+
   <div></div>
   <h2> <u>2.Choose your background color!</u></h2>
   <button id="toPurple">Purple</button>
-  <button id="toBlue" >Blue</button>
-  <button id="toRed" >Red</button>
-  <button id="toPink" >Pink</button>
-  <button id="toYellow" >Yellow</button>
+  <button id="toBlue">Blue</button>
+  <button id="toRed">Red</button>
+  <br>
+  <button id="toPink">Pink</button>
+  <button id="toYellow">Yellow</button>
   <button id="toBrown">Brown</button>
-  <br><br><br><br><br><br><br><br><br>
-<p></p>
-  
-  </body>
+  <br>
+  <button id="toGreen">Green</button>
+  <button id="toCyan">Cyan</button>
+  <button id="toAquamarine">Aquamarine</button>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>AMAZING!</h3>
+  <p></p>
+
+</body>
+
 </html>
