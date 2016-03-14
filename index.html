@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <title>jQuery Template</title>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'> 
   <script>
     $(function() {
       $('#Banner').click(function() {
 
         $("body").css("background-color");
         $("legend").css("background-color");
-        $("fieldset").slideUp("slow");
+        $("fieldset").slideUp("slow");// this will make the fieldset to go up when you press"make banner"
         var firstName = $("#secondName").val();
         var last = firstName;
         $('div').html(last);
-        var userTheme = $("input[name=theme]:checked").val();
+        var userTheme = $("input[name=theme]:checked").val();// this will make the text color change
         $('div').css("color", userTheme);
 
 
@@ -24,6 +24,7 @@
     });
 
     $(function() {
+      // these functions are buttons that will make the div change color
       $('#toPurple').click(function() {
         $('div').css('background-color', "Purple");
       });
@@ -72,7 +73,7 @@
     });
   </script>
   <style>
-    div {
+    div { /*the style for the div box */
       text-align: center;
       font-family: 'Lobster Two', cursive;
       font-size: 50px;
@@ -83,10 +84,10 @@
       margin: 20px 0;
     }
     
-    span {
+    span { 
       font-family: 'Lobster Two', cursive;
     }
-    
+    /*the legend border*/
     fieldset {
       font-size: 24px;
       font-family: 'Lobster Two', cursive;
@@ -115,12 +116,13 @@
     }
   </style>
 </head>
-
+<!--the whole background color-->
 <body style="background-color:#873352">
   <br>
   <br>
   <br>
   <br>
+  <!--this will allow the user to hover over the words to make it look like a wave-->
   <span style="color:pink">Ready </span><span style="color:pink">To  </span><span style="color:pink">Create </span><span style="color:pink">Your </span><span style="color:pink">Banner! </span>
   <br>
   <br>
